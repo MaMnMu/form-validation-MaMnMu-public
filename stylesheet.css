@@ -1,0 +1,67 @@
+body {
+    font: normal 1em "Fira Sans", "Helvetica Neue", sans-serif;
+    background: #3AAFAB;
+    color: #fff;
+    height: 100vh;
+}
+
+.flex-page {
+    flex-flow: column nowrap;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-outer {
+    flex-flow: column nowrap;
+}
+
+.flex-outer > div > label {
+    flex: 1 0 200px;
+    max-width: 300px;
+    margin-bottom: 5px;
+}
+.capaform {
+    margin-left: 50px; 
+    margin-right: 50px;
+    padding: 10px;
+    border: 5px solid orange}
+
+input[type=text], input[type="password"], input[type="date"], input[type="tel"], select { 
+    background: #3AAFAB;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 1em;
+    max-width: 500px;
+    flex-grow: 1}
+
+.form-section {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-inner > label {
+    flex: 1 0 200px;
+    max-width: 300px;
+    margin-bottom: 5px;
+}
+
+.select-section {
+    display:flex;
+    flex-flow: column;
+    flex: none;
+}
+
+.submit-section {
+    display:flex;
+    justify-content: flex-end;
+    flex: auto;
+}
+
+.submit {
+    height: 30px ;
+    background: orange}
